@@ -80,8 +80,8 @@ const about = {
                 timeframe: '2022 - Present',
                 role: 'Senior Design Engineer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    `Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.`,
+                    `Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.`
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
@@ -97,8 +97,8 @@ const about = {
                 timeframe: '2018 - 2022',
                 role: 'Lead Designer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    `Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.`,
+                    `Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.`
                 ],
                 images: []
             }
@@ -110,11 +110,11 @@ const about = {
         institutions: [
             {
                 name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                description: `Studied software engineering.`,
             },
             {
                 name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                description: `Studied online marketing and personal branding.`,
             }
         ]
     },
