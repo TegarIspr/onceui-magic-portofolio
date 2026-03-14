@@ -25,6 +25,16 @@
         "work": {
             "title": "Work Experience",
             "experiences": {
+                "assh": {
+                    "timeframe": "2021 - 2026",
+                    "role": "Frontend Developer",
+                    "achievements": "Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.;Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster."
+                },
+                "gupu": {
+                    "timeframe": "2020 - 2021",
+                    "role": "Mobile Developer",
+                    "achievements": "Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.;Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster."
+                },
                 "FLY": {
                     "timeframe": "2022 - Present",
                     "role": "Senior Design Engineer",
@@ -40,7 +50,7 @@
         "studies": {
             "title": "Studies",
             "institutions": {
-                "University of Jakarta": {
+                "Universitas Yudharta": {
                     "description": "Studied software engineering."
                 },
                 "Build the Future": {

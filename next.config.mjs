@@ -10,10 +10,10 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // outputFileTracingRoot: path.join(__dirname, '../'),
     pageExtensions: ["ts", "tsx", "md", "mdx"],
     transpilePackages: ["next-mdx-remote"],
     images: {
+        unoptimized: true,
         remotePatterns: [
             {
                 protocol: "https",

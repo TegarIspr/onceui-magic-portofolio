@@ -25,6 +25,16 @@
         "work": {
             "title": "工作经历",
             "experiences": {
+                "assh": {
+                    "timeframe": "2021 - 2026",
+                    "role": "Frontend Developer",
+                    "achievements": "重新设计了 FLY 平台的 UI/UX，使用户参与度提高了 20%，加载速度加快了 30%；主导将 AI 工具集成到设计工作流程中，使设计人员的迭代速度提高了 50%。"
+                },
+                "gupu": {
+                    "timeframe": "2020 - 2021",
+                    "role": "Mobile Developer",
+                    "achievements": "重新设计了 FLY 平台的 UI/UX，使用户参与度提高了 20%，加载速度加快了 30%；主导将 AI 工具集成到设计工作流程中，使设计人员的迭代速度提高了 50%。"
+                },
                 "FLY": {
                     "timeframe": "2022 - 至今",
                     "role": "高级设计工程师",
@@ -40,7 +50,7 @@
         "studies": {
             "title": "教育背景",
             "institutions": {
-                "University of Jakarta": {
+                "Universitas Yudharta": {
                     "description": "软件工程专业"
                 },
                 "Build the Future": {
