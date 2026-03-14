@@ -1,0 +1,81 @@
+{
+    "person": {
+        "role": "设计工程师"
+    },
+    "newsletter": {
+        "title": "订阅 {firstName} 的通讯",
+        "description": "我偶尔会写关于设计的文章，分享关于创意与工程交汇点的思考",
+        "button": "订阅"
+    },
+    "home": {
+        "label": "首页",
+        "title": "{name} 的作品集",
+        "description": "展示我作为 {role} 的作品集网站",
+        "headline": "设计工程师与创作者",
+        "subline": "我是 Selene，FLY 的设计工程师，致力于打造直观的用户体验。业余时间我开发自己的项目。"
+    },
+    "about": {
+        "label": "关于",
+        "title": "关于我",
+        "description": "认识来自 {location} 的 {role} {name}",
+        "intro": {
+            "title": "简介",
+            "description": "Selene 是一位雅加达的设计工程师，热爱将复杂挑战转化为简洁优雅的设计解决方案。她的作品涵盖数字界面、交互体验以及设计与技术的融合。"
+        },
+        "work": {
+            "title": "工作经历",
+            "experiences": {
+                "FLY": {
+                    "timeframe": "2022 - 至今",
+                    "role": "高级设计工程师",
+                    "achievements": "重新设计 FLY 平台的 UI/UX，用户参与度提升 20%，加载速度提升 30%。;主导将 AI 工具集成到设计工作流程中，使设计师迭代速度提升 50%。"
+                },
+                "Creativ3": {
+                    "timeframe": "2018 - 2022",
+                    "role": "首席设计师",
+                    "achievements": "开发设计系统，统一多个平台品牌形象，设计一致性提升 40%。;领导跨职能团队推出新产品线，为公司整体收入增长贡献 15%。"
+                }
+            }
+        },
+        "studies": {
+            "title": "教育背景",
+            "institutions": {
+                "University of Jakarta": {
+                    "description": "软件工程专业"
+                },
+                "Build the Future": {
+                    "description": "在线营销与个人品牌"
+                }
+            }
+        },
+        "technical": {
+            "title": "技术技能",
+            "skills": {
+                "Figma": {
+                    "description": "能够在 Figma 中以惊人速度使用 Once UI 进行原型设计"
+                },
+                "Nextjs": {
+                    "description": "使用 Next.js + Once UI + Supabase 构建下一代应用"
+                }
+            }
+        }
+    },
+    "blog": {
+        "label": "博客",
+        "title": "关于设计与科技的写作...",
+        "description": "了解 {name} 最近在做什么"
+    },
+    "work": {
+        "label": "作品",
+        "title": "我的项目",
+        "description": "{name} 的设计与开发项目"
+    },
+    "gallery": {
+        "label": "图库",
+        "title": "我的照片图库",
+        "description": "{name} 的照片集"
+    },
+    "projectCard": {
+        "label": "阅读案例研究"
+    }
+}

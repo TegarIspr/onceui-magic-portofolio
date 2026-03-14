@@ -1,6 +1,5 @@
 import { Flex, Heading } from '@/once-ui/components';
-import { Mailchimp } from '@/components';
-import { Posts } from '@/components/blog/Posts';
+import { Mailchimp, Posts } from '@/components';
 import { baseURL, renderContent } from '@/app/resources'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
