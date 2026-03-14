@@ -31,6 +31,7 @@
 		"sharp": "^0.33.5"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "^2.4.7",
 		"@csstools/postcss-global-data": "^2.1.1",
 		"@types/cookie": "^0.6.0",
 		"@types/node": "^20.19.37",
