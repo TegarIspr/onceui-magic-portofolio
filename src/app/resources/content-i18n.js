@@ -15,8 +15,8 @@ const createI18nContent = (t) => {
 
     const newsletter = {
         display: true,
-        title: <>{t("newsletter.title", { firstName: person.firstName })}</>,
-        description: <>{t("newsletter.description")}</>
+        title: t("newsletter.title", { firstName: person.firstName }),
+        description: t("newsletter.description")
     }
 
     const social = [
@@ -48,8 +48,8 @@ const createI18nContent = (t) => {
         label: t("home.label"),
         title: t("home.title", { name: person.name }),
         description: t("home.description", { role: person.role }),
-        headline: <>{t("home.headline")}</>,
-        subline: <>{t("home.subline")}</>
+        headline: t("home.headline"),
+        subline: t("home.subline")
     }
 
     const about = {
@@ -70,7 +70,7 @@ const createI18nContent = (t) => {
         intro: {
             display: true,
             title: t("about.intro.title"),
-            description: <>{t("about.intro.description")}</>
+            description: t("about.intro.description")
         },
         work: {
             display: true, // set to false to hide this section
@@ -105,11 +105,11 @@ const createI18nContent = (t) => {
             institutions: [
                 {
                     name: 'University of Jakarta',
-                    description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
+                    description: t(`about.studies.institutions.University of Jakarta.description`),
                 },
                 {
                     name: 'Build the Future',
-                    description: <>{t("about.studies.institutions.Build the Future.description")}</>,
+                    description: t("about.studies.institutions.Build the Future.description"),
                 }
             ]
         },
@@ -119,7 +119,7 @@ const createI18nContent = (t) => {
             skills: [
                 {
                     title: 'Figma',
-                    description: <>{t("about.technical.skills.Figma.description")}</>,
+                    description: t("about.technical.skills.Figma.description"),
                     images: [
                         {
                             src: '/images/projects/project-01/cover-02.jpg',
@@ -137,7 +137,7 @@ const createI18nContent = (t) => {
                 },
                 {
                     title: 'Next.js',
-                    description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
+                    description: t("about.technical.skills.Nextjs.description"), // "." not accepted in next-intl namespace
                     images: [
                         {
                             src: '/images/projects/project-01/cover-04.jpg',

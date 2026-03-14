@@ -2,12 +2,12 @@ import { Avatar, Button, Flex, Heading, Icon, IconButton, SmartImage, Tag, Text 
 import { baseURL, renderContent } from '@/app/resources';
 import TableOfContents from '@/components/about/TableOfContents';
 import styles from '@/components/about/about.module.scss'
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export async function generateMetadata(
-    {params: {locale}}: { params: { locale: string }}
+    { params }: { params: Promise<{ locale: string }> }
 ) {
+    const { locale } = await params;
     const t = await getTranslations();
     const {person, about, social } = renderContent(t);
 	const title = about.title;
@@ -38,11 +38,13 @@ export async function generateMetadata(
 	};
 }
 
-export default function About(
-    { params: {locale}}: { params: { locale: string }}
+export default async function About(
+    props: { params: Promise<{ locale: string }> }
 ) {
-    unstable_setRequestLocale(locale);
-    const t = useTranslations();
+    const params = await props.params;
+    const locale = params.locale;
+    setRequestLocale(locale);
+    const t = await getTranslations();
     const {person, about, social } = renderContent(t);
     const structure = [
         { 
@@ -79,7 +81,7 @@ export default function About(
                         '@type': 'Person',
                         name: person.name,
                         jobTitle: person.role,
-                        description: about.intro.description,
+                        description: about.description,
                         url: `https://${baseURL}/about`,
                         image: `${baseURL}/images/${person.avatar}`,
                         sameAs: social

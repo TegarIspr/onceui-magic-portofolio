@@ -5,25 +5,22 @@ import { getPosts } from '@/app/utils/utils'
 import { Avatar, Button, Flex, Heading, Text } from '@/once-ui/components'
 
 import { baseURL, renderContent } from '@/app/resources'
-import { unstable_setRequestLocale } from 'next-intl/server'
+import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { routing } from '@/i18n/routing';
-import { useTranslations } from 'next-intl';
 import { formatDate } from '@/app/utils/formatDate'
 
 interface BlogParams {
-    params: { 
+    params: Promise<{ 
         slug: string;
 		locale: string;
-    };
+    }>;
 }
 
 export async function generateStaticParams() {
 	const locales = routing.locales;
     
-    // Create an array to store all posts from all locales
     const allPosts: { slug: string; locale: string }[] = [];
 
-    // Fetch posts for each locale
     for (const locale of locales) {
         const posts = getPosts(['src', 'app', '[locale]', 'blog', 'posts', locale]);
         allPosts.push(...posts.map(post => ({
@@ -35,7 +32,8 @@ export async function generateStaticParams() {
     return allPosts;
 }
 
-export function generateMetadata({ params: { slug, locale } }: BlogParams) {
+export async function generateMetadata({ params }: BlogParams) {
+	const { slug, locale } = await params;
 	let post = getPosts(['src', 'app', '[locale]', 'blog', 'posts', locale]).find((post) => post.slug === slug)
 
 	if (!post) {
@@ -76,15 +74,16 @@ export function generateMetadata({ params: { slug, locale } }: BlogParams) {
 	}
 }
 
-export default function Blog({ params }: BlogParams) {
-	unstable_setRequestLocale(params.locale);
-	let post = getPosts(['src', 'app', '[locale]', 'blog', 'posts', params.locale]).find((post) => post.slug === params.slug)
+export default async function Blog({ params }: BlogParams) {
+	const { slug, locale } = await params;
+	setRequestLocale(locale);
+	let post = getPosts(['src', 'app', '[locale]', 'blog', 'posts', locale]).find((post) => post.slug === slug)
 
 	if (!post) {
 		notFound()
 	}
 
-	const t = useTranslations();
+	const t = await getTranslations();
 	const { person } = renderContent(t);
 
 	return (
@@ -106,7 +105,7 @@ export default function Blog({ params }: BlogParams) {
 						image: post.metadata.image
 							? `https://${baseURL}${post.metadata.image}`
 							: `https://${baseURL}/og?title=${post.metadata.title}`,
-							url: `https://${baseURL}/${params.locale}/blog/${post.slug}`,
+							url: `https://${baseURL}/${locale}/blog/${post.slug}`,
 						author: {
 							'@type': 'Person',
 							name: person.name,
@@ -115,7 +114,7 @@ export default function Blog({ params }: BlogParams) {
 				}}
 			/>
 			<Button
-				href={`/${params.locale}/blog`}
+				href={`/${locale}/blog`}
 				variant="tertiary"
 				size="s"
 				prefixIcon="chevronLeft">
