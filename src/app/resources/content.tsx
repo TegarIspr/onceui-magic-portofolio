@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { SiDocker, SiFigma, SiNextdotjs } from 'react-icons/si';
 
 interface Person {
   firstName: string;
@@ -54,6 +55,7 @@ interface Skill {
   title: string;
   description: ReactNode;
   images: WorkImage[];
+  icon?: any;
 }
 
 interface About {
@@ -237,6 +239,7 @@ const about: About = {
       {
         title: 'Figma',
         description: 'Able to prototype in Figma with Once UI with unnatural speed.',
+        icon: <SiFigma size={32} />,
         images: [
           {
             src: '/images/projects/project-01/cover-02.jpg',
@@ -253,8 +256,15 @@ const about: About = {
         ],
       },
       {
+        title: 'Docker',
+        description: 'Containerization and deployment with Docker.',
+        icon: <SiDocker size={32} />,
+        images: [],
+      },
+      {
         title: 'Next.js',
         description: 'Building next gen apps with Next.js + Once UI + Supabase.',
+        icon: <SiNextdotjs size={32} />,
         images: [
           {
             src: '/images/projects/project-01/cover-04.jpg',

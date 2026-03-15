@@ -60,33 +60,33 @@ const style: {
   theme: 'dark' | 'light';
   neutral: 'sand' | 'gray' | 'slate';
   brand:
-    | 'blue'
-    | 'indigo'
-    | 'violet'
-    | 'magenta'
-    | 'pink'
-    | 'red'
-    | 'orange'
-    | 'yellow'
-    | 'moss'
-    | 'green'
-    | 'emerald'
-    | 'aqua'
-    | 'cyan';
+  | 'blue'
+  | 'indigo'
+  | 'violet'
+  | 'magenta'
+  | 'pink'
+  | 'red'
+  | 'orange'
+  | 'yellow'
+  | 'moss'
+  | 'green'
+  | 'emerald'
+  | 'aqua'
+  | 'cyan';
   accent:
-    | 'blue'
-    | 'indigo'
-    | 'violet'
-    | 'magenta'
-    | 'pink'
-    | 'red'
-    | 'orange'
-    | 'yellow'
-    | 'moss'
-    | 'green'
-    | 'emerald'
-    | 'aqua'
-    | 'cyan';
+  | 'blue'
+  | 'indigo'
+  | 'violet'
+  | 'magenta'
+  | 'pink'
+  | 'red'
+  | 'orange'
+  | 'yellow'
+  | 'moss'
+  | 'green'
+  | 'emerald'
+  | 'aqua'
+  | 'cyan';
   solid: 'color' | 'contrast';
   solidStyle: 'flat' | 'plastic';
   border: 'rounded' | 'playful' | 'conservative';
@@ -95,8 +95,8 @@ const style: {
 } = {
   theme: 'dark',
   neutral: 'gray',
-  brand: 'emerald',
-  accent: 'indigo',
+  brand: 'pink',
+  accent: 'magenta',
   solid: 'contrast',
   solidStyle: 'flat',
   border: 'playful',

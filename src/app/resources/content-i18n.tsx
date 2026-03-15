@@ -1,3 +1,6 @@
+import type { ReactNode } from 'react';
+import { SiFlutter, SiFigma, SiNextdotjs } from 'react-icons/si';
+
 interface Person {
   firstName: string;
   lastName: string;
@@ -52,6 +55,7 @@ interface Skill {
   title: string;
   description: string;
   images: WorkImage[];
+  icon?: any;
 }
 
 interface About {
@@ -268,6 +272,7 @@ const createI18nContent = (t: TranslationFunction): I18nContent => {
         {
           title: 'Flutter',
           description: t('about.technical.skills.Figma.description'),
+          icon: <SiFlutter size={32} />,
           images: [
             {
               src: '/images/projects/project-01/cover-02.jpg',
@@ -286,6 +291,7 @@ const createI18nContent = (t: TranslationFunction): I18nContent => {
         {
           title: 'Figma',
           description: t('about.technical.skills.Figma.description'),
+          icon: <SiFigma size={32} />,
           images: [
             {
               src: '/images/projects/project-01/cover-02.jpg',
@@ -304,6 +310,7 @@ const createI18nContent = (t: TranslationFunction): I18nContent => {
         {
           title: 'Next.js',
           description: t('about.technical.skills.Nextjs.description'),
+          icon: <SiNextdotjs size={32} />,
           images: [
             {
               src: '/images/projects/project-01/cover-04.jpg',
