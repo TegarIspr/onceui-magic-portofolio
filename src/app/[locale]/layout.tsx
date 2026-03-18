@@ -2,18 +2,12 @@ import '@/once-ui/styles/index.scss';
 import '@/once-ui/tokens/index.scss';
 
 import classNames from 'classnames';
-
-import { Footer, Header, RouteGuard } from '@/components';
-import { baseURL, effects, style } from '@/app/resources';
-
-import { Inter } from 'next/font/google';
-import { Source_Code_Pro } from 'next/font/google';
-
+import { Inter, Source_Code_Pro } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
-
+import { baseURL, effects, renderContent, style } from '@/app/resources';
+import { Footer, Header, RouteGuard } from '@/components';
 import { routing } from '@/i18n/routing';
-import { renderContent } from '@/app/resources';
 import { Background, Flex } from '@/once-ui/components';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -90,7 +84,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
     <NextIntlClientProvider messages={messages}>
       <Flex
         as="html"
-        lang="en"
+        lang={locale}
         background="page"
         data-neutral={style.neutral}
         data-brand={style.brand}
