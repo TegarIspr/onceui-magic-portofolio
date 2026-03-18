@@ -94,57 +94,51 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
   setRequestLocale(locale);
   const messages = await getMessages();
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html
+      lang={locale}
+      suppressHydrationWarning
+      data-neutral={style.neutral}
+      data-brand={style.brand}
+      data-accent={style.accent}
+      data-solid={style.solid}
+      data-solid-style={style.solidStyle}
+      data-theme={style.theme}
+      data-border={style.border}
+      data-surface={style.surface}
+      data-transition={style.transition}
+      className={classNames(
+        'flex',
+        'page-background',
+        primary.variable,
+        secondary ? (secondary as any).variable : '',
+        tertiary ? (tertiary as any).variable : '',
+        code.variable,
+      )}
+    >
       <head>
         <Script id="theme-init" strategy="beforeInteractive">
           {themeScript}
         </Script>
       </head>
-      <body>
+      <body
+        className="flex p-0 m-0 flex-column"
+        style={{ minHeight: '100vh', width: '100%' }}
+      >
         <NextIntlClientProvider messages={messages}>
-          <Flex
-            as="html"
-            background="page"
-            data-neutral={style.neutral}
-            data-brand={style.brand}
-            data-accent={style.accent}
-            data-solid={style.solid}
-            data-solid-style={style.solidStyle}
-            data-theme={style.theme}
-            data-border={style.border}
-            data-surface={style.surface}
-            data-transition={style.transition}
-            className={classNames(
-              primary.variable,
-              secondary ? secondary.variable : '',
-              tertiary ? tertiary.variable : '',
-              code.variable,
-            )}
-          >
-            <Flex
-              style={{ minHeight: '100vh' }}
-              as="body"
-              fillWidth
-              margin="0"
-              padding="0"
-              direction="column"
-            >
-              <Background
-                mask={effects.mask as any}
-                gradient={effects.gradient as any}
-                dots={effects.dots as any}
-                lines={effects.lines as any}
-              />
-              <Flex fillWidth minHeight="16"></Flex>
-              <Header />
-              <Flex zIndex={0} fillWidth paddingY="l" paddingX="l" justifyContent="center" flex={1}>
-                <Flex justifyContent="center" fillWidth minHeight="0">
-                  <RouteGuard>{children}</RouteGuard>
-                </Flex>
-              </Flex>
-              <Footer />
+          <Background
+            mask={effects.mask as any}
+            gradient={effects.gradient as any}
+            dots={effects.dots as any}
+            lines={effects.lines as any}
+          />
+          <Flex fillWidth minHeight="16"></Flex>
+          <Header />
+          <Flex zIndex={0} fillWidth paddingY="l" paddingX="l" justifyContent="center" flex={1}>
+            <Flex justifyContent="center" fillWidth minHeight="0">
+              <RouteGuard>{children}</RouteGuard>
             </Flex>
           </Flex>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
