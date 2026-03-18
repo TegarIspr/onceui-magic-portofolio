@@ -6,7 +6,10 @@
     "export": "next build",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "biome format --write .",
+    "format:check": "biome format --check .",
+    "lint:fix": "biome lint --write ."
   },
   "dependencies": {
     "@floating-ui/react-dom": "^2.1.8",
