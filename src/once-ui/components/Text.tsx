@@ -94,14 +94,16 @@ const Text = <T extends ElementType = 'span'>({
     generateClassName('my', marginY),
   );
 
+  const Tag = (as || 'span') as any;
+
   return (
-    <Component
+    <Tag
       className={combinedClasses}
       style={{ textAlign: align, textWrap: wrap, ...style }}
       {...props}
     >
       {children}
-    </Component>
+    </Tag>
   );
 };
 

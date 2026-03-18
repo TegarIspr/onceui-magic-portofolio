@@ -180,7 +180,7 @@ const Grid = forwardRef<HTMLDivElement, ComponentProps>(
       ...style,
     };
 
-    const Component = as as ElementType;
+    const Component = (as || 'div') as any;
 
     return (
       <Component ref={ref} className={classes} style={combinedStyle} {...rest}>

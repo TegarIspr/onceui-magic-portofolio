@@ -94,14 +94,16 @@ const Heading = <T extends ElementType = 'h1'>({
     generateClassName('my', marginY),
   );
 
+  const Tag = (as || 'h1') as any;
+
   return (
-    <Component
+    <Tag
       className={combinedClasses}
       style={{ textAlign: align, textWrap: wrap, ...style }}
       {...props}
     >
       {children}
-    </Component>
+    </Tag>
   );
 };
 
