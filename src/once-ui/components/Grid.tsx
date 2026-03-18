@@ -1,18 +1,18 @@
 'use client';
 
-import React, { CSSProperties, forwardRef } from 'react';
 import classNames from 'classnames';
+import React, { type CSSProperties, type ElementType, forwardRef, type ReactNode } from 'react';
 
-import {
-  GridProps,
-  SpacingProps,
-  SizeProps,
-  StyleProps,
+import type {
   CommonProps,
-  DisplayProps,
   ConditionalProps,
+  DisplayProps,
+  GridProps,
+  SizeProps,
+  SpacingProps,
+  StyleProps,
 } from '../interfaces';
-import { SpacingToken, ColorScheme, ColorWeight } from '../types';
+import type { ColorScheme, ColorWeight, SpacingToken } from '../types';
 
 import styles from './Grid.module.scss';
 
@@ -23,12 +23,14 @@ interface ComponentProps
     StyleProps,
     CommonProps,
     DisplayProps,
-    ConditionalProps {}
+    ConditionalProps {
+  children?: ReactNode;
+}
 
 const Grid = forwardRef<HTMLDivElement, ComponentProps>(
   (
     {
-      as: Component = 'div',
+      as = 'div' as ElementType,
       columns,
       rows,
       gap,
@@ -178,6 +180,8 @@ const Grid = forwardRef<HTMLDivElement, ComponentProps>(
       ...style,
     };
 
+    const Component = as as ElementType;
+
     return (
       <Component ref={ref} className={classes} style={combinedStyle} {...rest}>
         {children}
@@ -188,5 +192,5 @@ const Grid = forwardRef<HTMLDivElement, ComponentProps>(
 
 Grid.displayName = 'Grid';
 
-export { Grid };
 export type { GridProps };
+export { Grid };

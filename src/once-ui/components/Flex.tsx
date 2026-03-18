@@ -1,18 +1,18 @@
 'use client';
 
-import React, { CSSProperties, forwardRef } from 'react';
 import classNames from 'classnames';
+import React, { type CSSProperties, type ElementType, forwardRef, type ReactNode } from 'react';
 
-import {
-  FlexProps,
-  SpacingProps,
-  SizeProps,
-  StyleProps,
+import type {
   CommonProps,
-  DisplayProps,
   ConditionalProps,
+  DisplayProps,
+  FlexProps,
+  SizeProps,
+  SpacingProps,
+  StyleProps,
 } from '../interfaces';
-import { TextVariant, SpacingToken, ColorScheme, ColorWeight } from '../types';
+import type { ColorScheme, ColorWeight, SpacingToken, TextVariant } from '../types';
 
 interface ComponentProps
   extends FlexProps,
@@ -21,12 +21,14 @@ interface ComponentProps
     StyleProps,
     CommonProps,
     DisplayProps,
-    ConditionalProps {}
+    ConditionalProps {
+  children?: ReactNode;
+}
 
 const Flex = forwardRef<HTMLDivElement, ComponentProps>(
   (
     {
-      as: Component = 'div',
+      as = 'div' as ElementType,
       direction,
       justifyContent,
       alignItems,
@@ -222,6 +224,8 @@ const Flex = forwardRef<HTMLDivElement, ComponentProps>(
       textAlign: align,
       ...style,
     };
+
+    const Component = as as ElementType;
 
     return (
       <Component ref={ref} className={classes} style={combinedStyle} {...rest}>
