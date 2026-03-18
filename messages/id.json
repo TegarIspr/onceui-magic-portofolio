@@ -1,91 +1,87 @@
 {
-    "person": {
-        "role": "Frontend Developer"
-    },
-    "newsletter": {
-        "title": "Langganan Buletin {firstName}",
-        "description": "Saya sesekali menulis tentang desain, teknologi, dan berbagi pemikiran tentang persimpangan kreativitas dan rekayasa",
-        "button": "Daftar"
-    },
-    "home": {
-        "label": "Beranda",
-        "title": "Portofolio {name}",
-        "description": "Situs web portofolio yang menampilkan karya saya sebagai {role}",
-        "headline": "Frontend Developer",
-        "subline": "Saya Tegar, seorang Frontend Developer di FLY, di mana saya membuat pengalaman pengguna yang intuitif. Setelah jam kerja, saya mengerjakan proyek-proyek pribadi."
-    },
-    "about": {
-        "label": "Tentang",
-        "title": "Tentang Saya",
-        "description": "Kenali {name}, {role} dari {location}",
-        "intro": {
-            "title": "Pengantar",
-            "description": "Tegar adalah seorang Frontend Developer yang berbasis di Malang dengan hasrat untuk mengubah tantangan kompleks menjadi solusi desain yang sederhana dan elegan. Karyanya meliputi antarmuka digital, pengalaman interaktif, dan pertemuan antara desain dan teknologi."
-        },
-        "work": {
-            "title": "Pengalaman Kerja",
-            "experiences": {
-                "assh": {
-                    "timeframe": "2021 - 2026",
-                    "role": "Frontend Developer",
-                    "achievements": "Mendesain ulang UI/UX untuk platform FLY, menghasilkan peningkatan keterlibatan pengguna sebesar 20% dan waktu muat lebih cepat sebesar 30%.;Memimpin integrasi alat AI ke dalam alur kerja desain, memungkinkan desainer untuk iterasi 50% lebih cepat."
-                },
-                "gupu": {
-                    "timeframe": "2020 - 2021",
-                    "role": "Mobile Developer",
-                    "achievements": "Mendesain ulang UI/UX untuk platform FLY, menghasilkan peningkatan keterlibatan pengguna sebesar 20% dan waktu muat lebih cepat sebesar 30%.;Memimpin integrasi alat AI ke dalam alur kerja desain, memungkinkan desainer untuk iterasi 50% lebih cepat."
-                },
-                "FLY": {
-                    "timeframe": "2022 - Sekarang",
-                    "role": "Senior Design Engineer",
-                    "achievements": "Mendesain ulang UI/UX untuk platform FLY, menghasilkan peningkatan keterlibatan pengguna sebesar 20% dan waktu muat lebih cepat sebesar 30%.;Memimpin integrasi alat AI ke dalam alur kerja desain, memungkinkan desainer untuk iterasi 50% lebih cepat."
-                },
-                "Creativ3": {
-                    "timeframe": "2018 - 2022",
-                    "role": "Desainer Utama",
-                    "achievements": "Mengembangkan sistem desain yang menyatukan merek di berbagai platform, meningkatkan konsistensi desain sebesar 40%.;Memimpin tim lintas fungsi untuk meluncurkan lini produk baru, berkontribusi pada peningkatan pendapatan perusahaan sebesar 15%."
-                }
-            }
-        },
-        "studies": {
-            "title": "Pendidikan",
-            "institutions": {
-                "Universitas Yudharta": {
-                    "description": "Belajar teknik informatika."
-                },
-                "Build the Future": {
-                    "description": "Belajar pemasaran online dan personal branding."
-                }
-            }
-        },
-        "technical": {
-            "title": "Kemampuan Teknis",
-            "skills": {
-                "Figma": {
-                    "description": "Mampu membuat prototipe di Figma dengan Once UI dengan kecepatan luar biasa."
-                },
-                "Nextjs": {
-                    "description": "Membangun aplikasi generasi berikutnya dengan Next.js + Once UI + Supabase."
-                }
-            }
-        }
-    },
-    "blog": {
-        "label": "Blog",
-        "title": "Menulis tentang desain dan teknologi...",
-        "description": "Baca apa yang {name} lakukan baru-baru ini"
+  "person": {
+    "role": "Mobile Application Developer"
+  },
+  "newsletter": {
+    "title": "Berlangganan Buletin {firstName}",
+    "description": "Saya sesekali menulis tentang pengembangan mobile, teknologi web, dan berbagi wawasan tentang membangun aplikasi kelas enterprise",
+    "button": "Daftar"
+  },
+  "home": {
+    "label": "Beranda",
+    "title": "Portofolio {name}",
+    "description": "Situs web portofolio yang menampilkan karya saya sebagai {role}",
+    "headline": "Mobile & Frontend Developer",
+    "subline": "Saya Tegar, seorang Mobile Application Developer yang fokus menjembatani kesenjangan antara desain dan teknologi. Saya mengkhususkan diri dalam membuat aplikasi Web dan Mobile berkinerja tinggi yang mengutamakan interaksi pengguna yang seamless."
+  },
+  "about": {
+    "label": "Tentang",
+    "title": "Tentang Saya",
+    "description": "Kenali {name}, {role} dari {location}",
+    "intro": {
+      "title": "Perkenalan",
+      "description": "Tegar adalah Mobile Application Developer berpengalaman yang fokus menjembatani kesenjangan antara desain dan teknologi. Berbeda dalam membuat aplikasi Web dan Mobile berkinerja tinggi yang mengutamakan interaksi pengguna yang seamless. Dengan gelar Computer Science dan pengalaman luas dalam mengembangkan aplikasi kelas enterprise."
     },
     "work": {
-        "label": "Karya",
-        "title": "Proyek Saya",
-        "description": "Proyek desain dan pengembangan oleh {name}"
+      "title": "Pengalaman Kerja",
+      "experiences": {
+        "assh": {
+          "timeframe": "Feb 2024 - Sekarang",
+          "role": "Frontend Developer",
+          "achievements": "Mengembangkan sistem manajemen rumah sakit terintegrasi yang secara signifikan meningkatkan efisiensi operasional.;Merancang dan mengimplementasikan modul baru untuk memenuhi kebutuhan spesifik dalam lingkungan rumah sakit.;Mengembangkan aplikasi mobile untuk pasien dan staf, meningkatkan aksesibilitas layanan.;Membuat aplikasi absensi mobile untuk meningkatkan akurasi pelacakan karyawan rumah sakit."
+        },
+        "wava": {
+          "timeframe": "Nov 2021 - Feb 2024",
+          "role": "Frontend Developer",
+          "achievements": "Berkontribusi pada sistem perangkat lunak komprehensif yang aimed at optimizing hospital operations.;Merancang aplikasi yang dapat diakses melalui browser web dan perangkat mobile, meningkatkan pengalaman pengguna.;Berkolaborasi erat dengan pemangku kepentingan untuk mengumpulkan persyaratan dan memberikan solusi yang disesuaikan.;Meningkatkan keterampilan dalam pengembangan frontend, desain antarmuka pengguna, dan pengembangan aplikasi lintas platform."
+        },
+        "gupu": {
+          "timeframe": "Feb 2021 - Jan 2022",
+          "role": "Mobile Application Developer",
+          "achievements": "Membuat aplikasi mobile berbasis Flutter yang merevolusi manajemen peternakan melalui integrasi RFID IoT.;Merancang antarmuka pengguna yang ramah untuk memfasilitasi akses mudah ke data peternakan.;Mengimplementasikan konektivitas Bluetooth untuk sinkronisasi data secara real-time.;Berkolaborasi erat dengan tim startup untuk berinovasi solusi dalam teknologi pertanian."
+        }
+      }
     },
-    "gallery": {
-        "label": "Galeri",
-        "title": "Galeri Foto Saya",
-        "description": "Koleksi foto oleh {name}"
+    "studies": {
+      "title": "Pendidikan",
+      "institutions": {
+        "Universitas Yudharta": {
+          "description": "Sarjana Komputer (2016 - 2020)"
+        }
+      }
     },
-    "projectCard": {
-        "label": "Baca Studi Kasus"
+    "technical": {
+      "title": "Keahlian & Sertifikasi",
+      "skills": {
+        "Mobile": {
+          "description": "Pengembangan aplikasi mobile berbasis Flutter dengan integrasi RFID IoT dan Bluetooth."
+        },
+        "Frontend": {
+          "description": "Membangun aplikasi web responsif dengan React, Next.js, dan framework UI modern."
+        },
+        "Docker": {
+          "description": "Containerization dan deployment untuk aplikasi yang skalabel."
+        }
+      }
     }
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Menulis tentang teknologi...",
+    "description": "Baca apa yang {name} lakukan baru-baru ini"
+  },
+  "work": {
+    "label": "Karya",
+    "title": "Proyek Saya",
+    "description": "Proyek pengembangan oleh {name}"
+  },
+  "gallery": {
+    "label": "Galeri",
+    "title": "Galeri Foto Saya",
+    "description": "Koleksi foto oleh {name}"
+  },
+  "projectCard": {
+    "label": "Baca Studi Kasus",
+    "link": "Tautan Proyek"
+  }
 }

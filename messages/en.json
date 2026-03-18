@@ -1,92 +1,87 @@
 {
-    "person": {
-        "role": "Design Engineer"
-    },
-    "newsletter": {
-        "title": "Subscribe to {firstName}'s Newsletter",
-        "description": "I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering",
-        "button": "Sign up"
-    },
-    "home": {
-        "label": "Home",
-        "title": "{name}'s Portfolio",
-        "description": "Portfolio website showcasing my work as a {role}",
-        "headline": "Design engineer and builder",
-        "subline": "I'm Selene, a design engineer at FLY, where I craft intuitive user experiences. After hours, I build my own projects."
-    },
-    "about": {
-        "label": "About",
-        "title": "About me",
-        "description": "Meet {name}, {role} from {location}",
-        "intro": {
-            "title": "Introduction",
-            "description": "Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology."
-        },
-        "work": {
-            "title": "Work Experience",
-            "experiences": {
-                "assh": {
-                    "timeframe": "2021 - 2026",
-                    "role": "Frontend Developer",
-                    "achievements": "Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.;Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster."
-                },
-                "gupu": {
-                    "timeframe": "2020 - 2021",
-                    "role": "Mobile Developer",
-                    "achievements": "Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.;Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster."
-                },
-                "FLY": {
-                    "timeframe": "2022 - Present",
-                    "role": "Senior Design Engineer",
-                    "achievements": "Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.;Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster."
-                },
-                "Creativ3": {
-                    "timeframe": "2018 - 2022",
-                    "role": "Lead Designer",
-                    "achievements": "Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.;Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue."
-                }
-            }
-        },
-        "studies": {
-            "title": "Studies",
-            "institutions": {
-                "Universitas Yudharta": {
-                    "description": "Studied software engineering."
-                },
-                "Build the Future": {
-                    "description": "Studied online marketing and personal branding."
-                }
-            }
-        },
-        "technical": {
-            "title": "Technical skills",
-            "skills": {
-                "Figma": {
-                    "description": "Able to prototype in Figma with Once UI with unnatural speed."
-                },
-                "Nextjs": {
-                    "description": "Building next gen apps with Next.js + Once UI + Supabase."
-                }
-            }
-        }
-    },
-    "blog": {
-        "label": "Blog",
-        "title": "Writing about design and tech...",
-        "description": "Read what {name} has been up to recently"
+  "person": {
+    "role": "Mobile Application Developer"
+  },
+  "newsletter": {
+    "title": "Subscribe to {firstName}'s Newsletter",
+    "description": "I occasionally write about mobile development, web technology, and share insights on building enterprise-grade applications",
+    "button": "Sign up"
+  },
+  "home": {
+    "label": "Home",
+    "title": "{name}'s Portfolio",
+    "description": "Portfolio website showcasing my work as a {role}",
+    "headline": "Mobile & Frontend Developer",
+    "subline": "I'm Tegar, a Mobile Application Developer focused on bridging the gap between design and technology. I specialize in crafting high-performance Web and Mobile applications that prioritize seamless user interaction."
+  },
+  "about": {
+    "label": "About",
+    "title": "About me",
+    "description": "Meet {name}, {role} from {location}",
+    "intro": {
+      "title": "Introduction",
+      "description": "Tegar is an experienced Mobile Application Developer focused on bridging the gap between design and technology. Specializing in crafting high-performance Web and Mobile applications that prioritize seamless user interaction. With a Computer Science degree and extensive experience in developing enterprise-grade applications."
     },
     "work": {
-        "label": "Work",
-        "title": "My projects",
-        "description": "Design and dev projects by {name}"
+      "title": "Work Experience",
+      "experiences": {
+        "assh": {
+          "timeframe": "Feb 2024 - Present",
+          "role": "Frontend Developer",
+          "achievements": "Developed an integrated hospital management system that significantly improved operational efficiency.;Designed and implemented new modules to meet specific needs within the hospital environment.;Developed a mobile application for patients and staff, enhancing service accessibility.;Created a mobile attendance application to improve tracking accuracy for hospital employees."
+        },
+        "wava": {
+          "timeframe": "Nov 2021 - Feb 2024",
+          "role": "Frontend Developer",
+          "achievements": "Contributed to comprehensive software systems aimed at optimizing hospital operations.;Designed applications accessible via web browsers and mobile devices, enhancing user experience.;Worked closely with stakeholders to gather requirements and deliver tailored solutions.;Enhanced skills in frontend development, user interface design, and cross-platform application development."
+        },
+        "gupu": {
+          "timeframe": "Feb 2021 - Jan 2022",
+          "role": "Mobile Application Developer",
+          "achievements": "Created a Flutter-based mobile application that revolutionized livestock management through RFID IoT integration.;Designed user-friendly interfaces to facilitate easy access to livestock data.;Implemented Bluetooth connectivity for real-time data synchronization.;Worked closely with a startup team to innovate solutions in agricultural technology."
+        }
+      }
     },
-    "gallery": {
-        "label": "Gallery",
-        "title": "My photo gallery",
-        "description": "A photo collection by {name}"
+    "studies": {
+      "title": "Education",
+      "institutions": {
+        "Universitas Yudharta": {
+          "description": "Bachelor of Computer Science (2016 - 2020)"
+        }
+      }
     },
-    "projectCard": {
-        "label": "Read Case Study",
-        "link": "Project Link"
+    "technical": {
+      "title": "Skills & Certifications",
+      "skills": {
+        "Mobile": {
+          "description": "Flutter-based mobile development with RFID IoT and Bluetooth integration."
+        },
+        "Frontend": {
+          "description": "Building responsive web applications with React, Next.js, and modern UI frameworks."
+        },
+        "Docker": {
+          "description": "Containerization and deployment for scalable applications."
+        }
+      }
     }
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Writing about tech...",
+    "description": "Read what {name} has been up to recently"
+  },
+  "work": {
+    "label": "Work",
+    "title": "My projects",
+    "description": "Development projects by {name}"
+  },
+  "gallery": {
+    "label": "Gallery",
+    "title": "My photo gallery",
+    "description": "A photo collection by {name}"
+  },
+  "projectCard": {
+    "label": "Read Case Study",
+    "link": "Project Link"
+  }
 }

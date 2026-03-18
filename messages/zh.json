@@ -1,91 +1,87 @@
 {
-    "person": {
-        "role": "设计工程师"
-    },
-    "newsletter": {
-        "title": "订阅 {firstName} 的通讯",
-        "description": "我偶尔会写关于设计的文章，分享关于创意与工程交汇点的思考",
-        "button": "订阅"
-    },
-    "home": {
-        "label": "首页",
-        "title": "{name} 的作品集",
-        "description": "展示我作为 {role} 的作品集网站",
-        "headline": "设计工程师与创作者",
-        "subline": "我是 Selene，FLY 的设计工程师，致力于打造直观的用户体验。业余时间我开发自己的项目。"
-    },
-    "about": {
-        "label": "关于",
-        "title": "关于我",
-        "description": "认识来自 {location} 的 {role} {name}",
-        "intro": {
-            "title": "简介",
-            "description": "Selene 是一位雅加达的设计工程师，热爱将复杂挑战转化为简洁优雅的设计解决方案。她的作品涵盖数字界面、交互体验以及设计与技术的融合。"
-        },
-        "work": {
-            "title": "工作经历",
-            "experiences": {
-                "assh": {
-                    "timeframe": "2021 - 2026",
-                    "role": "Frontend Developer",
-                    "achievements": "重新设计了 FLY 平台的 UI/UX，使用户参与度提高了 20%，加载速度加快了 30%；主导将 AI 工具集成到设计工作流程中，使设计人员的迭代速度提高了 50%。"
-                },
-                "gupu": {
-                    "timeframe": "2020 - 2021",
-                    "role": "Mobile Developer",
-                    "achievements": "重新设计了 FLY 平台的 UI/UX，使用户参与度提高了 20%，加载速度加快了 30%；主导将 AI 工具集成到设计工作流程中，使设计人员的迭代速度提高了 50%。"
-                },
-                "FLY": {
-                    "timeframe": "2022 - 至今",
-                    "role": "高级设计工程师",
-                    "achievements": "重新设计 FLY 平台的 UI/UX，用户参与度提升 20%，加载速度提升 30%。;主导将 AI 工具集成到设计工作流程中，使设计师迭代速度提升 50%。"
-                },
-                "Creativ3": {
-                    "timeframe": "2018 - 2022",
-                    "role": "首席设计师",
-                    "achievements": "开发设计系统，统一多个平台品牌形象，设计一致性提升 40%。;领导跨职能团队推出新产品线，为公司整体收入增长贡献 15%。"
-                }
-            }
-        },
-        "studies": {
-            "title": "教育背景",
-            "institutions": {
-                "Universitas Yudharta": {
-                    "description": "软件工程专业"
-                },
-                "Build the Future": {
-                    "description": "在线营销与个人品牌"
-                }
-            }
-        },
-        "technical": {
-            "title": "技术技能",
-            "skills": {
-                "Figma": {
-                    "description": "能够在 Figma 中以惊人速度使用 Once UI 进行原型设计"
-                },
-                "Nextjs": {
-                    "description": "使用 Next.js + Once UI + Supabase 构建下一代应用"
-                }
-            }
-        }
-    },
-    "blog": {
-        "label": "博客",
-        "title": "关于设计与科技的写作...",
-        "description": "了解 {name} 最近在做什么"
+  "person": {
+    "role": "移动应用开发者"
+  },
+  "newsletter": {
+    "title": "订阅 {firstName} 的通讯",
+    "description": "我偶尔会写关于移动开发、Web技术的文章，分享关于构建企业级应用程序的见解",
+    "button": "订阅"
+  },
+  "home": {
+    "label": "首页",
+    "title": "{name} 的作品集",
+    "description": "展示我作为 {role} 的作品集网站",
+    "headline": "移动与前端开发者",
+    "subline": "我是 Tegar，一名专注于弥合设计与技术之间差距的移动应用开发者。我擅长打造注重无缝用户交互的高性能 Web 和移动应用程序。"
+  },
+  "about": {
+    "label": "关于",
+    "title": "关于我",
+    "description": "认识来自 {location} 的 {role} {name}",
+    "intro": {
+      "title": "简介",
+      "description": "Tegar 是一位经验丰富的移动应用开发者，专注于弥合设计与技术之间的差距。擅长打造注重无缝用户交互的高性能 Web 和移动应用程序。拥有计算机科学学位和开发企业级应用程序的丰富经验。"
     },
     "work": {
-        "label": "作品",
-        "title": "我的项目",
-        "description": "{name} 的设计与开发项目"
+      "title": "工作经历",
+      "experiences": {
+        "assh": {
+          "timeframe": "2024年2月 - 至今",
+          "role": "前端开发者",
+          "achievements": "开发了集成医院管理系统，显著提高了运营效率。;设计和实施新模块以满足医院环境的特定需求。;开发了面向患者和员工的移动应用，提升服务可访问性。;创建了移动考勤应用，提高员工跟踪准确性。"
+        },
+        "wava": {
+          "timeframe": "2021年11月 - 2024年2月",
+          "role": "前端开发者",
+          "achievements": "为优化医院运营开发了综合软件系统。;设计可通过 Web 浏览器和移动设备访问的应用程序，提升用户体验。;与利益相关者密切合作，收集需求并提供定制解决方案。;提升了前端开发、用户界面设计和跨平台应用程序开发的技能。"
+        },
+        "gupu": {
+          "timeframe": "2021年2月 - 2022年1月",
+          "role": "移动应用开发者",
+          "achievements": "创建了基于 Flutter 的移动应用程序，通过 RFID IoT 集成革新了畜牧业管理。;设计用户友好的界面，方便访问畜牧业数据。;实施蓝牙连接以实现实时数据同步。;与创业团队密切合作，在农业技术领域创新解决方案。"
+        }
+      }
     },
-    "gallery": {
-        "label": "图库",
-        "title": "我的照片图库",
-        "description": "{name} 的照片集"
+    "studies": {
+      "title": "教育背景",
+      "institutions": {
+        "Universitas Yudharta": {
+          "description": "计算机科学学士 (2016 - 2020)"
+        }
+      }
     },
-    "projectCard": {
-        "label": "阅读案例研究"
+    "technical": {
+      "title": "技能与认证",
+      "skills": {
+        "Mobile": {
+          "description": "基于 Flutter 的移动开发，具备 RFID IoT 和蓝牙集成能力。"
+        },
+        "Frontend": {
+          "description": "使用 React、Next.js 和现代 UI 框架构建响应式 Web 应用程序。"
+        },
+        "Docker": {
+          "description": "容器化部署，实现应用程序可扩展性。"
+        }
+      }
     }
+  },
+  "blog": {
+    "label": "博客",
+    "title": "撰写关于技术...",
+    "description": "了解 {name} 最近在做什么"
+  },
+  "work": {
+    "label": "作品",
+    "title": "我的项目",
+    "description": "{name} 的开发项目"
+  },
+  "gallery": {
+    "label": "图库",
+    "title": "我的照片图库",
+    "description": "{name} 的照片集"
+  },
+  "projectCard": {
+    "label": "阅读案例研究",
+    "link": "项目链接"
+  }
 }

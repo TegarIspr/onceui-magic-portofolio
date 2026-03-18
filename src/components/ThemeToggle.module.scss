@@ -1,0 +1,19 @@
+.toggle {
+    transition: transform var(--transition-micro-medium);
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.placeholder {
+    width: var(--static-space-40);
+    height: var(--static-space-40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

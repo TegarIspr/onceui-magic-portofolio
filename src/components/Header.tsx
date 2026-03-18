@@ -1,14 +1,15 @@
 'use client';
 
+import { useParams } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { useEffect, useState, useTransition } from 'react';
 import { display, renderContent, routes } from '@/app/resources';
 import { i18n } from '@/app/resources/config';
 import styles from '@/components/Header.module.scss';
 import { type Locale, routing, usePathname, useRouter } from '@/i18n/routing';
 import { Flex, ToggleButton } from '@/once-ui/components';
-import { useTranslations } from 'next-intl';
-import { useParams } from 'next/navigation';
-import { useEffect, useState, useTransition } from 'react';
 import { LanguageSelector } from './LanguageSelector';
+import { ThemeToggle } from './ThemeToggle';
 
 type TimeDisplayProps = {
   timeZone: string;
@@ -179,6 +180,9 @@ export const Header = () => {
             {routing.locales.length > 1 && i18n && (
               <LanguageSelector currentLocale={currentLocale} />
             )}
+          </Flex>
+          <Flex paddingLeft="12">
+            <ThemeToggle />
           </Flex>
           <Flex hide="s" paddingLeft="16">
             {display.time && <TimeDisplay timeZone={person.location} />}

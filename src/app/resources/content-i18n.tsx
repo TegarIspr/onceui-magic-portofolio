@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { SiFlutter, SiFigma, SiNextdotjs } from 'react-icons/si';
+import { SiDocker, SiFigma, SiFlutter, SiNextdotjs } from 'react-icons/si';
 
 interface Person {
   firstName: string;
@@ -147,7 +147,7 @@ const createI18nContent = (t: TranslationFunction): I18nContent => {
   };
 
   const newsletter: Newsletter = {
-    display: true,
+    display: false,
     title: t('newsletter.title', { firstName: person.firstName }),
     description: t('newsletter.description'),
   };
@@ -156,22 +156,17 @@ const createI18nContent = (t: TranslationFunction): I18nContent => {
     {
       name: 'GitHub',
       icon: 'github',
-      link: 'https://github.com/once-ui-system/nextjs-starter',
+      link: 'https://github.com/kn9r',
     },
     {
       name: 'LinkedIn',
       icon: 'linkedin',
-      link: 'https://www.linkedin.com/company/once-ui/',
-    },
-    {
-      name: 'X',
-      icon: 'x',
-      link: '',
+      link: 'https://www.linkedin.com/in/kn9r',
     },
     {
       name: 'Email',
       icon: 'email',
-      link: 'mailto:example@gmail.com',
+      link: 'mailto:tegarispr.id@gmail.com',
     },
   ];
 
@@ -233,24 +228,10 @@ const createI18nContent = (t: TranslationFunction): I18nContent => {
           images: [],
         },
         {
-          company: 'FLY',
-          timeframe: t('about.work.experiences.FLY.timeframe'),
-          role: t('about.work.experiences.FLY.role'),
-          achievements: t('about.work.experiences.FLY.achievements').split(';'),
-          images: [
-            {
-              src: '/images/projects/project-01/cover-01.jpg',
-              alt: 'Once UI Project',
-              width: 16,
-              height: 9,
-            },
-          ],
-        },
-        {
-          company: 'Creativ3',
-          timeframe: t('about.work.experiences.Creativ3.timeframe'),
-          role: t('about.work.experiences.Creativ3.role'),
-          achievements: t('about.work.experiences.Creativ3.achievements').split(';'),
+          company: 'Rumah Sakit Wava Husada',
+          timeframe: t('about.work.experiences.wava.timeframe'),
+          role: t('about.work.experiences.wava.role'),
+          achievements: t('about.work.experiences.wava.achievements').split(';'),
           images: [],
         },
       ],
@@ -270,55 +251,22 @@ const createI18nContent = (t: TranslationFunction): I18nContent => {
       title: t('about.technical.title'),
       skills: [
         {
-          title: 'Flutter',
-          description: t('about.technical.skills.Figma.description'),
+          title: 'Mobile Development',
+          description: t('about.technical.skills.Mobile.description'),
           icon: <SiFlutter size={32} />,
-          images: [
-            {
-              src: '/images/projects/project-01/cover-02.jpg',
-              alt: 'Project image',
-              width: 16,
-              height: 9,
-            },
-            {
-              src: '/images/projects/project-01/cover-03.jpg',
-              alt: 'Project image',
-              width: 16,
-              height: 9,
-            },
-          ],
+          images: [],
         },
         {
-          title: 'Figma',
-          description: t('about.technical.skills.Figma.description'),
-          icon: <SiFigma size={32} />,
-          images: [
-            {
-              src: '/images/projects/project-01/cover-02.jpg',
-              alt: 'Project image',
-              width: 16,
-              height: 9,
-            },
-            {
-              src: '/images/projects/project-01/cover-03.jpg',
-              alt: 'Project image',
-              width: 16,
-              height: 9,
-            },
-          ],
-        },
-        {
-          title: 'Next.js',
-          description: t('about.technical.skills.Nextjs.description'),
+          title: 'Frontend Development',
+          description: t('about.technical.skills.Frontend.description'),
           icon: <SiNextdotjs size={32} />,
-          images: [
-            {
-              src: '/images/projects/project-01/cover-04.jpg',
-              alt: 'Project image',
-              width: 16,
-              height: 9,
-            },
-          ],
+          images: [],
+        },
+        {
+          title: 'Docker',
+          description: t('about.technical.skills.Docker.description'),
+          icon: <SiDocker size={32} />,
+          images: [],
         },
       ],
     },

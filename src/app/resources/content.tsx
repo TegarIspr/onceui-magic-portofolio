@@ -126,38 +126,33 @@ const person: Person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: 'Design Engineer',
+  role: 'Mobile Application Developer',
   avatar: '/images/avatar.jpg',
   location: 'Asia/Jakarta',
   languages: ['English', 'Bahasa'],
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: `Subscribe to ${person.firstName}'s Newsletter`,
-  description: `I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.`,
+  description: `I occasionally write about mobile development, web technology, and share insights on building enterprise-grade applications.`,
 };
 
 const social: Social[] = [
   {
     name: 'GitHub',
     icon: 'github',
-    link: 'https://github.com/once-ui-system/nextjs-starter',
+    link: 'https://github.com/kn9r',
   },
   {
     name: 'LinkedIn',
     icon: 'linkedin',
-    link: 'https://www.linkedin.com/company/once-ui/',
-  },
-  {
-    name: 'X',
-    icon: 'x',
-    link: '',
+    link: 'https://www.linkedin.com/in/kn9r',
   },
   {
     name: 'Email',
     icon: 'email',
-    link: 'mailto:example@gmail.com',
+    link: 'mailto:tegarispr.id@gmail.com',
   },
 ];
 
@@ -165,8 +160,8 @@ const home: Home = {
   label: 'Home',
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: `Design engineer and builder`,
-  subline: `I'm ${person.firstName}, a design engineer at FLY, where I craft intuitive user experiences. After hours, I build my own projects.`,
+  headline: `Mobile & Frontend Developer`,
+  subline: `I'm ${person.firstName}, a ${person.role} focused on bridging the gap between design and technology. I specialize in crafting high-performance Web and Mobile applications that prioritize seamless user interaction.`,
 };
 
 const about: About = {
@@ -187,36 +182,45 @@ const about: About = {
   intro: {
     display: true,
     title: 'Introduction',
-    description: `${person.firstName} is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.`,
+    description: `${person.firstName} is an experienced ${person.role} focused on bridging the gap between design and technology. Specializing in crafting high-performance Web and Mobile applications that prioritize seamless user interaction. With a Computer Science degree and extensive experience in developing enterprise-grade applications, I bring a strong understanding of system integration and interface design.`,
   },
   work: {
     display: true,
     title: 'Work Experience',
     experiences: [
       {
-        company: 'FLY',
-        timeframe: '2022 - Present',
-        role: 'Senior Design Engineer',
+        company: 'PT Abna Samanhudi Sautika Husada',
+        timeframe: 'Feb 2024 - Present',
+        role: 'Frontend Developer',
         achievements: [
-          `Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.`,
-          `Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.`,
+          `Developed an integrated hospital management system that significantly improved operational efficiency.`,
+          `Designed and implemented new modules to meet specific needs within the hospital environment.`,
+          `Developed a mobile application for patients and staff, enhancing service accessibility.`,
+          `Created a mobile attendance application to improve tracking accuracy for hospital employees.`,
         ],
-        images: [
-          {
-            src: '/images/projects/project-01/cover-01.jpg',
-            alt: 'Once UI Project',
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: 'Creativ3',
-        timeframe: '2018 - 2022',
-        role: 'Lead Designer',
+        company: 'Rumah Sakit Wava Husada',
+        timeframe: 'Nov 2021 - Feb 2024',
+        role: 'Frontend Developer',
         achievements: [
-          `Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.`,
-          `Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.`,
+          `Contributed to comprehensive software systems aimed at optimizing hospital operations.`,
+          `Designed applications accessible via web browsers and mobile devices, enhancing user experience.`,
+          `Worked closely with stakeholders to gather requirements and deliver tailored solutions.`,
+          `Enhanced skills in frontend development, user interface design, and cross-platform application development.`,
+        ],
+        images: [],
+      },
+      {
+        company: 'PT Gupu Farmtech Indonesia',
+        timeframe: 'Feb 2021 - Jan 2022',
+        role: 'Mobile Application Developer',
+        achievements: [
+          `Created a Flutter-based mobile application that revolutionized livestock management through RFID IoT integration.`,
+          `Designed user-friendly interfaces to facilitate easy access to livestock data.`,
+          `Implemented Bluetooth connectivity for real-time data synchronization.`,
+          `Worked closely with a startup team to innovate solutions in agricultural technology.`,
         ],
         images: [],
       },
@@ -224,55 +228,36 @@ const about: About = {
   },
   studies: {
     display: true,
-    title: 'Studies',
+    title: 'Education',
     institutions: [
       {
         name: 'Universitas Yudharta Pasuruan',
-        description: `Studied Informatics.`,
+        description: `Bachelor of Computer Science (2016 - 2020)`,
       },
     ],
   },
   technical: {
     display: true,
-    title: 'Technical skills',
+    title: 'Skills & Certifications',
     skills: [
       {
-        title: 'Figma',
-        description: 'Able to prototype in Figma with Once UI with unnatural speed.',
+        title: 'Mobile Development',
+        description: 'Flutter-based mobile development with RFID IoT and Bluetooth integration.',
         icon: <SiFigma size={32} />,
-        images: [
-          {
-            src: '/images/projects/project-01/cover-02.jpg',
-            alt: 'Project image',
-            width: 16,
-            height: 9,
-          },
-          {
-            src: '/images/projects/project-01/cover-03.jpg',
-            alt: 'Project image',
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: 'Docker',
-        description: 'Containerization and deployment with Docker.',
-        icon: <SiDocker size={32} />,
         images: [],
       },
       {
-        title: 'Next.js',
-        description: 'Building next gen apps with Next.js + Once UI + Supabase.',
+        title: 'Frontend Development',
+        description:
+          'Building responsive web applications with React, Next.js, and modern UI frameworks.',
         icon: <SiNextdotjs size={32} />,
-        images: [
-          {
-            src: '/images/projects/project-01/cover-04.jpg',
-            alt: 'Project image',
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
+      },
+      {
+        title: 'Docker',
+        description: 'Containerization and deployment for scalable applications.',
+        icon: <SiDocker size={32} />,
+        images: [],
       },
     ],
   },
